@@ -5,7 +5,7 @@ body{
 .container{
     width: 100%;
     max-width: 1000px;
-    height: 400px;
+    min-height: 400px;
     background-color: #e3f1fd;
     border-radius: 5px;
     box-shadow: 1px 1px 5px #bebebe;
