@@ -88,3 +88,17 @@ header h1{
 .form-button button:hover{
     background: #88b5e9;
 }
+
+
+
+ul h2, ul p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+
+ul h2{
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
