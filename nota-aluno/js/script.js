@@ -1,5 +1,6 @@
 const inputNota = document.getElementById("nota");
 const resultado = document.getElementById("resultado");
+const message = document.getElementById("message");
 
 console.log("funciona");
 
@@ -9,14 +10,17 @@ function resultadoNotaClick(event){
 
     //validação
     if(inputNotaValue == ""){
-        alert("Prencha o campo da nota")
+        message.style.display="block";
         return false;
     }
 
     //logica
     if (inputNotaValue >= 6){
-        alert("Aprovado")
+        resultado.innerHTML="Aprovado!"
+        
     } else{
-        alert("Reprovado")
+        resultado.innerHTML="Reprovado!"
     }
+
+    inputNota.value = "";
 }
