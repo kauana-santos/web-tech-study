@@ -9,7 +9,6 @@
 </head>
 
 <body>
-
     <main class="container">
         <form>
             <article class="form-control">
@@ -17,10 +16,14 @@
                 <input type="number" min="0" id="nota">
             </article>
 
-            <button id="verifica-nota">Verificar nota</button>
+            <button id="verifica-nota" onclick="resultadoNotaClick(event)">Verificar nota</button>
+
+            <div id="resultado">
+                
+            </div>
         </form>
     </main>
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" defer></script>
 </body>
 
 </html>
