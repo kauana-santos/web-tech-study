@@ -20,4 +20,5 @@ salvarBtn.addEventListener("click", (event) => {
     localStorage.setItem(chave, valor)
 
 
+    carregarValores();
 })
