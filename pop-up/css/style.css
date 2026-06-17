@@ -6,7 +6,7 @@
 button {
   display: block;
   margin: 20px auto;
-  background: crimson;
+  background: rgb(167, 3, 36);
   color: white;
   border: 0;
   cursor: pointer;
