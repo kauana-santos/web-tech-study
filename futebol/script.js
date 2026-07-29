@@ -11,8 +11,12 @@ const jogadores = [
     "Raphinha"
 ];
 
-console.log("111")
-
 function listarJogadores(){
-    alert("1")
+   let lista = document.getElementById("listaJogadores")
+   lista.innerHTML = ""
+
+   for(let i = 0; i < jogadores.length; i++){
+        console.log(jogadores[i])
+        lista.innerHTML += `<li>${jogadores[i]} </li>`
+    }
 }
