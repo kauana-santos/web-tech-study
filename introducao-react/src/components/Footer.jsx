@@ -1,8 +1,8 @@
 
-const Footer = () => {
+const Footer = (props) => {
   return (
     <div>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+      <p> {props.titulo}</p>
     </div>
   )
 }

@@ -9,7 +9,7 @@ const Header = (props) =>{
 
     return(
         <header style={headerStyle}>
-            <h1>{props.title}</h1>
+            <h1>{props.titulo}</h1>
         </header>
     )
 }
