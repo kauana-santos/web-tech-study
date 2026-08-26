@@ -2,7 +2,9 @@
 import './App.css'
 // import StrangerThings from './components/StrangerThings/StrangerThings'
  import Banner from './components/Banner'
+import Box from './components/Box'
  import Card from './components/Card'
+import Count from './components/Count'
  import Footer from './components/Footer'
  import Header from './components/Header'
  import ImgCard from './components/ImgCard'
@@ -19,6 +21,11 @@ function App() {
 
 
       <Header titulo = "Utilizando props"/>
+
+      <Count/>
+
+      <Box/>
+
       <ImgCard caption = "texto"/>
 
       <Banner>
@@ -28,6 +35,8 @@ function App() {
 
       <Card/>
       <Footer titulo = "atividade footer"/>
+
+
       
     </>
   )
