@@ -1,4 +1,6 @@
 import  Header from "./components/Header"
+import Home from "./pages/Home"
+
 import "./global.css"
 
 function App() {
@@ -6,7 +8,8 @@ function App() {
   return (
     <>
     <Header/>
-      <h1>Projeto react</h1>
+    <Home/>
+   
     </>
   )
 }

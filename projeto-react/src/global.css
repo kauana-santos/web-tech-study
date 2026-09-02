@@ -10,7 +10,7 @@
     margin: 0 auto;
 }
 
-.theFlex{
+.d-flex{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
