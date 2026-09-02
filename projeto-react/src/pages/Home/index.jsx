@@ -4,7 +4,7 @@ import img2 from "../../assets/img/box-2.jpg"
 export default function index() {
   return (
     <main className="container">
-        <section className="d-flex">
+        <section className="d-flex secao">
             <Box
                 img={img1}
                 title="titulo componente"
