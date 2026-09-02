@@ -1,13 +1,14 @@
 
 import './App.css'
+import Album from './components/Album'
 // import StrangerThings from './components/StrangerThings/StrangerThings'
- import Banner from './components/Banner'
+import Banner from './components/Banner'
 import Box from './components/Box'
- import Card from './components/Card'
+import Card from './components/Card'
 import Count from './components/Count'
- import Footer from './components/Footer'
- import Header from './components/Header'
- import ImgCard from './components/ImgCard'
+import Footer from './components/Footer'
+import Header from './components/Header'
+import ImgCard from './components/ImgCard'
 
 function App() {
 
@@ -36,7 +37,7 @@ function App() {
       <Card/>
       <Footer titulo = "atividade footer"/>
 
-
+      <Album/>
       
     </>
   )
