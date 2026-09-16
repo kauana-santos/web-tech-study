@@ -8,14 +8,14 @@
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    height: 77vh;
+    min-height: 77vh;
 }
 
 .container2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 76vh;
+    min-height: 76vh;
 }
 
 .d-flex{
@@ -25,5 +25,5 @@
 }
 
 .secao{
-    height: 77vh;
+    min-height: 77vh;
 }
