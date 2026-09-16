@@ -24,14 +24,17 @@
 "sobre": [
   {
     "id": "1",
+    "titulo": "O que é JSON Server?",
     "texto": "O JSON Server é uma ferramenta que permite criar uma API REST de forma rápida e simples utilizando apenas um arquivo JSON. Ele é bastante utilizado durante o desenvolvimento de aplicações para simular um backend e facilitar os testes de funcionalidades no frontend."
   },
   {
     "id": "2",
+    "titulo": "Como funciona o JSON Server?",
     "texto": "Para utilizar o JSON Server, é necessário ter o Node.js instalado no computador. Depois, basta instalar o pacote com o comando npm install -g json-server, criar um arquivo db.json com os dados da aplicação e iniciar o servidor. A ferramenta transforma automaticamente os dados do arquivo JSON em endpoints que podem ser acessados através de requisições HTTP."
   },
   {
     "id": "3",
+    "titulo": "JSON Server em projetos",
     "texto": "O JSON Server é mais indicado para estudos, protótipos e desenvolvimento de aplicações, não sendo recomendado como solução definitiva para sistemas em produção. Apesar de facilitar a criação de uma API simulada, aplicações reais normalmente precisam de recursos mais avançados, como autenticação, regras de negócio, banco de dados e maior controle sobre as requisições."
   }
 ]
