@@ -1,6 +1,6 @@
 import "./Sobre.css"
 
-export default function index() {
+export default function Sobre() {
   return (
     <section className="container container-sobre">
         <h1>Sobre</h1>
