@@ -4,9 +4,9 @@
     margin: 40px auto;
     padding: 30px;
 
-    background-color: #ffffff;
+    background-color: #ececec;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.212);
 }
 
 .usuarios h1 {
@@ -20,7 +20,7 @@
     padding: 20px;
     margin-bottom: 15px;
 
-    background-color: #f8f9fa;
+    background-color: #dadada;
     border-radius: 10px;
     border: 1px solid #e5e5e5;
 
@@ -34,7 +34,7 @@
 
 .content-usuarios hr {
     border: 0;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #b8b8b8;
     margin-top: 20px;
 }
 

@@ -1,17 +1,15 @@
 import { useState } from "react"
 import { toast, ToastContainer } from "react-toastify";
-import "../../../node_modules/react-toastify/dist/ReactToastify.css"
-import "./cadastro.css"
+import Listagem from "../../components/Listagem";
+import "./news.css"
 
-export default function Cadastro() {
-    //estado para armazenar os ddos do formulario
+
+export default function News() {
     const [formData, setFormData] = useState({
         nome: "",
-        telefone: "",
         email: ""
     })
 
-    //função para atualizar o status ao digitar no formulario
     const handleChange = (e) => {
         //obter o elemento de entrada atual
         const {name, value} = e.target;
@@ -23,57 +21,45 @@ export default function Cadastro() {
         }))
     }
 
-    //função para enviar formulario
-    const handleSubmit = (e) =>{
+    const handleSubmit = (e) => {
         e.preventDefault();
-        // enviando os dados para o backend como json
 
-        //validação dos campos
-        if(formData.nome == "" || formData.email == "" || formData.telefone == ""){
+        if(formData.nome == "" || formData.email == "" ){
             toast.error("Todos os campos são obrigatorios")
             return false;
         }
 
-        fetch("http://localhost:3000/usuarios", {
+        fetch("http://localhost:3000/usuariosNews", {
             method: "POST",
             headers:{
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(formData)
         })
-
+        
         .then((res) => res.json())
         .then((data) => {
             console.log("usuario cadastrado: ", data)
             toast.success("usuario cadastrado com sucesso")
             setFormData({
-                nome: "",
+                nome: "", 
                 telefone:"",
                 email:"",
             })
         })
-    } 
+    }
 
-    return (
-    <main className='container cadUsuarios'>
-      <h1>Cadastro de usuarios</h1>
-        <form className="form-container" onSubmit={handleSubmit}>
+  return (   
+    <main className="container containerNews">
+      <h1>News</h1>
+        <div>
+           <form className="form-container" onSubmit={handleSubmit}>
         <article className="form-control">
             <label htmlFor="nome">Nome</label>
             <input 
                 type="text" 
                 name="nome" 
                 value={formData.nome}
-                onChange={handleChange}
-            />
-        </article>
-        
-        <article className="form-control">
-            <label htmlFor="telefone">Telefone</label>
-            <input 
-                type="text"
-                name="telefone"
-                value={formData.telefone}
                 onChange={handleChange}
             />
         </article>
@@ -89,10 +75,12 @@ export default function Cadastro() {
         </article>
 
         <button type="submit">Cadastrar</button>
-        
 
         <ToastContainer />
       </form>
+        </div>
+
+        <Listagem/>
     </main>
-  )
+    )
 }
