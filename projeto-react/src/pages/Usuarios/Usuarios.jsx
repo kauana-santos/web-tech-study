@@ -11,6 +11,16 @@ export default function Usuarios() {
             .catch((error) => console.log(error))
     }, [])
 
+    const deleteUsuarios = (id) => {
+        fetch(`http://localhost:3000/usuarios/${id}`, {
+            method: "DELETE"
+        })
+        .then(() => {
+            setUsuarios(usuarios.filter(() => usuarios.id !== id));
+        })
+        .catch((error) => console.log(error))
+
+    }
     return (
         <section className="container usuarios">
             <h1>Lista de usuarios</h1>
@@ -23,7 +33,10 @@ export default function Usuarios() {
                     <br />
                     <strong>Email: {user.email}</strong>
                     <br />
-                    <button className="delete">Deletar</button>
+                    <button 
+                        className="delete"
+                        onClick={() => deleteUsuarios(user.id)}                    
+                    >Deletar</button>
                     <hr />
                 </article>
             ))}
